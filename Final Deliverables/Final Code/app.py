@@ -5,7 +5,7 @@ import numpy as np
 import requests
 
 # NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account.
-API_KEY = "Zc5JTfaTbgCdptIgwL8Q6_14NmQTQphyS0abzBjwSB4k"
+API_KEY = "m6ItEdtDgFEBE2yEqGEmK6RBYBp352wmnfxovEC-mZHx"
 token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey":
  API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
 mltoken = token_response.json()["access_token"]
